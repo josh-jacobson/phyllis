@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @painting.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @painting.description %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @painting.category %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @painting.size %>
+</p>
+
+<p>
+  <strong>Filename:</strong>
+  <%= @painting.filename %>
+</p>
+
+<center><%= image_tag(@painting.filename) %>
+</center>
+
+<%= link_to 'Edit', edit_painting_path(@painting) %> |
+<%= link_to 'Back', paintings_path %>
