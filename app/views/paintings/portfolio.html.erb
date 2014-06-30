@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <meta charset="utf-8">
-    <title>Photographer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-    <!-- Styles -->
-    <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.css" rel="stylesheet">
-    <link href="assets/css/photographer.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/js/shadowbox/shadowbox.css">
-    
-    <!-- HTML5 shim -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-</head>    
-<body>
-  
-  <div class="masthead clearfix">
+ <div class="masthead clearfix">
       
     <div class="container">
       
@@ -48,14 +23,19 @@
     
     <ul class="filter-nav">
       <li class="active"><a data-id="all" href="">All</a></li>
-      <li><a data-id="portraits" href="">Portraits</a></li>
+      <li><a data-id="flowers" href="">Flowers</a></li>
+      <li><a data-id="leaves" href="">Leaves</a></li>
       <li><a data-id="landscapes" href="">Landscapes</a></li>
+      <li><a data-id="under_the_sea" href="">Under The Sea</a></li>
       <li><a data-id="animals" href="">Animals</a></li>
+      <li><a data-id="abstract" href="">Abstract</a></li>
     </ul>
     
     </div>
     
     <ul class="thumbnails" id="thumbnails">
+
+      <%= render @paintings %>
     
       <li class="span3" data-id="1" data-type="portraits">
         <a href="assets/img/photo_01.jpg" class="thumbnail">
