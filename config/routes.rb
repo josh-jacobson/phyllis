@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   root 'home#index'
+  get 'portfolio' => 'paintings#portfolio'
+
+  #get '/the_artist' => 'static_pages#the_artist'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

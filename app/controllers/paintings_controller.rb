@@ -7,6 +7,10 @@ class PaintingsController < ApplicationController
     @paintings = Painting.all
   end
 
+  def portfolio
+    @paintings = Painting.all
+  end
+
   # GET /paintings/1
   # GET /paintings/1.json
   def show
