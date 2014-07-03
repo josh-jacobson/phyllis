@@ -4,6 +4,8 @@
 body {
 	background: url(../img/bg.jpg);
 	padding-top: 100px;
+	padding-right: 50px;
+	padding-left: 50px;
 }
 
 p {
@@ -11,7 +13,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 100;
+	font-weight: 150;
 	margin-bottom: 10px;
 }
 
@@ -37,6 +39,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 200;
 	font-family: "Pacifico";
 	text-shadow: 0px 1px 1px #000;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 .logo span {

@@ -6,8 +6,8 @@ Rails.application.routes.draw do
 
   root 'home#index'
   get 'portfolio' => 'paintings#portfolio'
-
-  #get '/the_artist' => 'static_pages#the_artist'
+  get '/the_artist' => 'static_pages#the_artist'
+  get '/guestbook' => 'static_pages#guestbook'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
