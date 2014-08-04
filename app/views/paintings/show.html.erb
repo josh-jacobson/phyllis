@@ -3,6 +3,6 @@
 <center>
   <h1><%= @painting.title %></h1>
   <h3><%= "#{@painting.description}, #{@painting.size}" %></h3>
-  <%= image_tag(@painting.filename) %>
+  <%= image_tag(@painting.filename.downcase) %>
 </center>
 <%= link_to 'Back', paintings_path %>
