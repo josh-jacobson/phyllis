@@ -1,6 +1,5 @@
 <li class="span3" data-id="<%= painting.id %>" data-type="<%= painting.category %>">
   <a href="<%= painting.filename %>" class="thumbnail">
-      <%= image_tag(painting.filename.downcase) %>
-      <span class="caption"><i class="icon-plus-sign"></i></span>
+    <%= link_to image_tag(painting.filename.downcase), painting %>
   </a>
 </li>
