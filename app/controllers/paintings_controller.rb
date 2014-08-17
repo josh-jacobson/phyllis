@@ -8,7 +8,8 @@ class PaintingsController < ApplicationController
   end
 
   def portfolio
-    @paintings = Painting.all
+    @horizontal_paintings = Painting.where(vertical: false)
+    @vertical_paintings = Painting.where(vertical: true)
   end
 
   # GET /paintings/1
@@ -73,6 +74,6 @@ class PaintingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def painting_params
-      params.require(:painting).permit(:title, :description, :category, :size, :filename)
+      params.require(:painting).permit(:title, :description, :category, :size, :filename, :vertical)
     end
 end
