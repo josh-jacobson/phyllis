@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 10px;
 }
 
+h3 {
+  color: #000;
+}
+
 .leftline {
 	border-left: 1px solid #F4F4F4;
 	padding-left: 20px;
